@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n;
+        var f0 = 0, f1 = 1, fn;
+        tong = 0;
+        document.write(f0, "</br>", f1);
+        n = parseInt(prompt("nhập số n:"));
+        for (var i = 0; i < n - 2; i++) {
+            fn = f0 + f1;
+            f0 = f1;
+            f1 = fn;
+            tong = tong + fn;
+            document.write("</br>", fn);
+        }
+        document.write("tổng 20 số trong dãy là:", tong);
+
+    </script>
+</body>
+
+</html>
